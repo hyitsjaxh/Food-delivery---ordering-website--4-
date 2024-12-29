@@ -1,0 +1,366 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  font-family: 'poppins';
+  background: url(image/main_container_img.webp) no-repeat center;
+  background-size: cover;
+}
+header{
+  height: 10%;
+}
+nav{
+  height: 100%;
+  width: 100%;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo > h1{
+  font-weight: 400;
+}
+.logo h1::after{
+  margin-left: 3%;
+  content: "Eats";
+  font-size: 20px;
+  font-weight: 800;
+}
+.logo > i{
+  margin-top: 5%;
+  font-weight: 900;
+}
+.btn #loginbtn,#signbtn{
+  border-radius: 20px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+#loginbtn{
+  background-color: white;
+}
+#loginbtn:hover{
+  background-color: lightgrey;
+}
+#signbtn:hover{
+  background-color: white;
+  color: black;
+}
+#signbtn{
+  background-color: black;
+  color: white;
+}
+.overlay{
+  height: 90%;
+  width: 100%;
+  padding: 0 2.5rem;
+  display: flex;
+  background-color: rgba(172, 166, 166, 0.014);
+}
+.content_center {
+  height: 40%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-self: center;
+}
+.content_center > h1{
+  font-size: 45px;
+}
+.input{
+  height: 20%;
+  width: 60%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+}
+.input > i{
+  font-size: 25px;
+}
+.input > input{
+  width: 75%;
+  height: 80%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 10px;
+}
+.input > button{
+  border-radius: 10px;
+  padding: 8px 15px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.input > button:hover{
+  background-color: white;
+  color: black;
+}
+.content_center > a{
+  text-decoration: none;
+  color: black;
+}
+.content_center > a:hover{
+  color: white;
+}
+
+.container_2{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box1,.box2,.box3{
+  height: 350px;
+  width: 420px;
+}
+.img{
+  height: 80%;
+  width: 100%;
+}
+.img > img{
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  object-fit: cover;
+}
+.img > a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.img > a:hover{
+  border-bottom: 2px solid red;
+}
+.container_3{
+  height: 100%;
+  padding: 1rem 1.5rem;
+}
+.heading{
+  height: 10%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.heading > a{
+  align-self: flex-end;
+  color: black;
+}
+.heading > a:hover{
+  color: crimson;
+}
+.map_img{
+  height: 54%;
+}
+.map_img > img{
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 10%;
+  object-fit: cover;
+}
+.cities_links{
+  height: 36%;
+}
+.cities_links > ul{
+  padding: 1rem;
+  display: flex; 
+} 
+.cities_links > ul > li{
+  padding: 1rem 2rem;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.cities_links > ul > li > a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.cities_links > ul > li > a:hover{
+  color: crimson;
+}
+.container_4{
+  height: 60%;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid lightgray;
+}
+.heading_2{
+  height: 15%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.heading_2 > a{
+  align-self: flex-end;
+  color: black;
+}
+.heading_2 > a:hover{
+  color: crimson;
+}
+.Countries_links{
+  height: 36%;
+}
+.Countries_links > ul{
+  padding: 1rem;
+  display: flex; 
+} 
+.Countries_links > ul > li{
+  padding: 1rem 2rem;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.Countries_links > ul > li > a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.Countries_links > ul > li > a:hover{
+  color: crimson;
+}
+
+.container_5{
+  height: 60%;
+  padding: 1rem 1.5rem;
+}
+.top{
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+.top .left{
+  height: 100%;
+  width: 40%;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left  > h1{
+  margin-left: 3%;
+  font-weight: 500;
+}
+.left > h1::after{
+  content: "Eats";
+  font-size: 20px;
+  font-weight: 800;
+}
+.left .app_link{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.app_link .box1{
+  height: 100px;
+  width: 240px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.app_link .box2{
+  height: 100px;
+  width: 240px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.app_link .img {
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+}
+.app_link .box1,.box2 > p{
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+.top .right{
+  height: 100%;
+  width: 60%;
+}
+.right > ul{
+  display: flex; 
+  padding: 2rem 5rem;
+} 
+.right > ul > li{
+  width: 100%;
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+}
+.right > ul > li > a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.right > ul > li > a:hover{
+  color: crimson;
+}
+.bottom{
+  height: 30%;
+  width: 100%;
+}
+.footer1,.footer2{
+  height: 50%;
+  width: 100%;
+}
+.footer1{
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social_links{
+  font-size: 20px;
+}
+.warning{
+  display: flex;
+  gap: 30px;
+}
+.warning > a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+
+}
+.footer2 > p{
+  font-size: 15px;
+} 
+.footer2 > p > a {
+  text-decoration: none;
+  color: black;
+}
+.footer2{
+  display: flex;
+  padding: 0 1rem;
+  align-items: last baseline;
+  justify-content: end;
+  gap: 5%;
+}
